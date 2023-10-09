@@ -28,7 +28,7 @@ int main(int argc, char** argv)
 
 	try
 	{
-		std::vector<const char*> items{ "ARANHA", "SAPO", "DENTADURAS", "FANTASMINHA", "BRUXINHA" };
+		std::vector<const char*> items{ "ARANHA", "SAPO", "DENTADURA", "FANTASMINHA", "BRUXINHA" };
 		Application app(std::cout, count);
 
 		app.setItems(items.begin(), items.end());
