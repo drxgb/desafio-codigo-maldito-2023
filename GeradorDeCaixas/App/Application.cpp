@@ -11,7 +11,7 @@ using std::endl;
 using std::ofstream;
 using std::stringstream;
 
-constexpr const size_t LIST_SIZE = 20U;
+constexpr const size_t LIST_SIZE = 100U;
 constexpr const size_t MIN_SIZE = 3U;
 
 
