@@ -9,7 +9,13 @@ import static com.drxgb.codigomaldito.entity.Toy.DENTADURA;
 import static com.drxgb.codigomaldito.entity.Toy.FANTASMINHA;
 import static com.drxgb.codigomaldito.entity.Toy.SAPO;
 
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import org.junit.jupiter.api.Test;
@@ -29,23 +35,56 @@ import com.drxgb.codigomaldito.service.InsertionBagHandler;
 class DistributeToysTest
 {
 	@Test
-	void test()
+	void test() throws IOException
+	{
+		Queue<Toy> queue;
+		String filename;
+		String path = "D:\\Zueiras\\Programacao\\Condadinho\\CodigoMaldito2023\\Solução\\caixas\\";
+		
+		for (int i = 0; i < 50; ++i)
+		{
+			System.out.println("Test #" + (i + 1));
+			System.out.println("================");
+			filename = makeFilename(path, "caixa", i + 1, ".txt");
+			
+			try (
+				InputStream input = new BufferedInputStream(new FileInputStream(filename));
+				Scanner scanner = new Scanner(input);
+			)
+			{
+				queue = makeToyBox(scanner);
+				assertChildrensToys(queue);
+			}
+			
+			System.out.println("\n***\n");
+		}
+		
+	}
+	
+	
+	private static String makeFilename(String path, String name, int index, String extension)
+	{
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(path).append(name).append(index).append(extension);		
+		return sb.toString();
+	}
+	
+	
+	private static Queue<Toy> makeToyBox(Scanner scanner)
 	{
 		Queue<Toy> queue = new LinkedBlockingQueue<Toy>();
+		String item;
+		Toy toy;
 		
-		queue.add(DENTADURA);
-		queue.add(ARANHA);
-		queue.add(ARANHA);
-		queue.add(SAPO);
-		queue.add(FANTASMINHA);
-		queue.add(BRUXINHA);
-		queue.add(SAPO);
-		queue.add(BRUXINHA);
-		queue.add(FANTASMINHA);
-		queue.add(DENTADURA);
-		queue.add(SAPO);
+		while (scanner.hasNext())
+		{
+			item = scanner.nextLine();
+			toy = Toy.valueOf(item);
+			queue.offer(toy);
+		}
 		
-		assertChildrensToys(queue);
+		return queue;
 	}
 	
 	
@@ -74,10 +113,16 @@ class DistributeToysTest
 			h1.handle(toy);
 		}
 		
-		System.out.println(b1.getItems());
-		System.out.println(b2.getItems());
-		System.out.println(b3.getItems());
-		System.out.println(b4.getItems());
-		System.out.println(b5.getItems());
+		Arrays.asList(b1, b2, b3, b4, b5).forEach(DistributeToysTest::printBag);
+	}
+	
+	
+	private static void printBag(Bag<Toy> bag)
+	{
+		StringBuilder sb = new StringBuilder();
+		Child child = (Child)bag.getOwner();
+		
+		sb.append(child.getName()).append(":\t").append(bag.getItems());
+		System.out.println(sb);
 	}
 }
