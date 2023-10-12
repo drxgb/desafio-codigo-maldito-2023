@@ -13,18 +13,17 @@ import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import org.junit.jupiter.api.Test;
 
+import com.drxgb.codigomaldito.Game;
 import com.drxgb.codigomaldito.entity.Bag;
 import com.drxgb.codigomaldito.entity.Child;
 import com.drxgb.codigomaldito.entity.Toy;
-import com.drxgb.codigomaldito.service.BagHandler;
-import com.drxgb.codigomaldito.service.InsertionBagHandler;
+import com.drxgb.codigomaldito.factory.InsertionBagHandlerFactory;
 
 /**
  * Unidade de testes para distribuição dos brinquedos
@@ -35,39 +34,28 @@ import com.drxgb.codigomaldito.service.InsertionBagHandler;
 class DistributeToysTest
 {
 	@Test
-	void test() throws IOException
+	void test()
+			throws IOException, RuntimeException
 	{
-		Queue<Toy> queue;
-		String filename;
-		String path = "D:\\Zueiras\\Programacao\\Condadinho\\CodigoMaldito2023\\Solução\\caixas\\";
+		String filename = "D:\\Zueiras\\Programacao\\Condadinho\\CodigoMaldito2023\\Solução\\caixas\\caixa15.txt";
+		Game game;
 		
-		for (int i = 0; i < 50; ++i)
+		try (
+			InputStream input = new BufferedInputStream(new FileInputStream(filename));
+			Scanner scanner = new Scanner(input);
+		)
 		{
-			System.out.println("Test #" + (i + 1));
-			System.out.println("================");
-			filename = makeFilename(path, "caixa", i + 1, ".txt");
-			
-			try (
-				InputStream input = new BufferedInputStream(new FileInputStream(filename));
-				Scanner scanner = new Scanner(input);
-			)
-			{
-				queue = makeToyBox(scanner);
-				assertChildrensToys(queue);
-			}
-			
-			System.out.println("\n***\n");
-		}
-		
-	}
-	
-	
-	private static String makeFilename(String path, String name, int index, String extension)
-	{
-		StringBuilder sb = new StringBuilder();
-		
-		sb.append(path).append(name).append(index).append(extension);		
-		return sb.toString();
+			game = new Game();
+			game.addPlayer("Samuel", SAPO);
+			game.addPlayer("Franklin", ARANHA);
+			game.addPlayer("Hellen", FANTASMINHA);
+			game.addPlayer("JC", BRUXINHA);
+			game.addPlayer("Daniel", DENTADURA);
+			game.setHandlerFactory(new InsertionBagHandlerFactory<>());
+			game.setBox(makeToyBox(scanner));
+			game.run();
+			game.getBags().forEach(DistributeToysTest::printBag);
+		}		
 	}
 	
 	
@@ -88,41 +76,12 @@ class DistributeToysTest
 	}
 	
 	
-	private static void assertChildrensToys(Queue<Toy> box)
-	{
-		Bag<Toy> b1 = new Bag<>(new Child("Samuel", SAPO));
-		Bag<Toy> b2 = new Bag<>(new Child("Franklin", ARANHA));
-		Bag<Toy> b3 = new Bag<>(new Child("Hellen", FANTASMINHA));
-		Bag<Toy> b4 = new Bag<>(new Child("JC", BRUXINHA));
-		Bag<Toy> b5 = new Bag<>(new Child("Daniel", DENTADURA));
-		
-		BagHandler<Toy> h1 = new InsertionBagHandler<>(b1);
-		BagHandler<Toy> h2 = new InsertionBagHandler<>(b2);
-		BagHandler<Toy> h3 = new InsertionBagHandler<>(b3);
-		BagHandler<Toy> h4 = new InsertionBagHandler<>(b4);
-		BagHandler<Toy> h5 = new InsertionBagHandler<>(b5);
-		
-		h1.setNext(h2);
-		h2.setNext(h3);
-		h3.setNext(h4);
-		h4.setNext(h5);
-		
-		while (!box.isEmpty())
-		{
-			Toy toy = box.poll();			
-			h1.handle(toy);
-		}
-		
-		Arrays.asList(b1, b2, b3, b4, b5).forEach(DistributeToysTest::printBag);
-	}
-	
-	
 	private static void printBag(Bag<Toy> bag)
 	{
 		StringBuilder sb = new StringBuilder();
 		Child child = (Child)bag.getOwner();
 		
-		sb.append(child.getName()).append(":\t").append(bag.getItems());
+		sb.append(child.getName()).append(":\n\t").append(bag.getItems());
 		System.out.println(sb);
 	}
 }
