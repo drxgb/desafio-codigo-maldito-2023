@@ -1,0 +1,25 @@
+Samuel: [ SAPO, SAPO, SAPO, SAPO, SAPO, SAPO, SAPO, ]
+Franklin: [ ARANHA, ]
+Hellen: [ ]
+JC: [ BRUXINHA, ]
+Daniel: [ DENTADURA, ]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Expectativa:
+------------
+
+Samuel:
+	[SAPO, SAPO, SAPO, SAPO, SAPO, SAPO, SAPO]
+Franklin:
+	[ARANHA]
+Hellen:
+	[]
+JC:
+	[BRUXINHA]
+Daniel:
+	[DENTADURA]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Resultado:		✔️ Passou
+Tempo decorrido:	0.053s
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

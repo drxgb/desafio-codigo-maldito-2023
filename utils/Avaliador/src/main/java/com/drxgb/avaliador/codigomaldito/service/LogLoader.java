@@ -69,13 +69,15 @@ public final class LogLoader implements Loader<Scanner, List<Bag<Toy>>>
 			{
 				childName = matcher.group(1);
 				listStr = matcher.group(2);
-				items = (listStr != null)
-						? Arrays.asList(listStr.split(",( *)"))
+				items = (listStr != null && !listStr.isEmpty())
+						? Arrays.asList(listStr.split(",\\s*"))
 						: Collections.emptyList();
 				toy = null;
 
 				for (String item : items)
-				{					
+				{
+					item = item.trim();
+
 					if (toyNames != null)
 						toy = toyNames.get(item);
 					if (toy == null)

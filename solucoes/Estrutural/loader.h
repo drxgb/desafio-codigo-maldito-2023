@@ -1,80 +1,53 @@
-#include "Toy.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "Toy.h"
 
-void loadBoxes(
-	enum Toy** boxes,
-	size_t size,
-	const char* path,
-	const char* filename,
-	const char* extension);
-void getFullPath(char** fullName, size_t index, const char* path, const char* filename, const char* extension);
+void loadBox(enum Toy* box, const size_t capacity, const char* filename);
 enum Toy getToyByName(const char* name);
 
 
-void loadBoxes(enum Toy** boxes, size_t size, const char* path, const char* filename, const char* extension)
+void loadBox(enum Toy* box, const size_t capacity, const char* filename)
 {
 	FILE* file;
-	char* fullName;
-	char item[15];
+	char* item;
 
-	for (size_t i = 0; i < size; ++i)
+	fopen_s(&file, filename, "r");
+	if (file)
 	{
-		getFullPath(&fullName, i + 1, path, filename, extension);
-		fopen_s(&file, fullName, "r");
+		size_t i = 0;
 
-		if (file)
+		item = (char*)malloc(sizeof(char) * 15);
+		do
 		{
-			size_t j = 0;
-			do
+			*item = '\0';
+			fgets(item, 15, file);
+			if (*item)
 			{
-				*item = '\0';
-				fgets(item, 15, file);
-				if (*item)
-				{
-					if (item[strlen(item) - 1] == '\n')
-						item[strlen(item) - 1] = '\0';
-					boxes[i][j] = getToyByName(item);
-					++j;
-				}
-			} while (*item);
-		}
+				if (item[strlen(item) - 1] == '\n')
+					item[strlen(item) - 1] = '\0';
+				box[i] = getToyByName(item);
+				++i;
+			}
+		} while (*item);
 
 		fclose(file);
-		free(fullName);
+		free(item);
 	}
-}
-
-
-void getFullPath(char** fullName, size_t index, const char* path, const char* filename, const char* extension)
-{
-	char num[6];
-
-	*fullName = (char*)malloc(sizeof(char) * FILENAME_MAX);
-	for (size_t i = 0; i < FILENAME_MAX; ++i)
-		*(*fullName + 1) = '\0';
-
-	_itoa_s((int)index, num, 6, 10);
-	strcpy_s(*fullName, FILENAME_MAX, path);
-	strcat_s(*fullName, FILENAME_MAX, "\\");
-	strcat_s(*fullName, FILENAME_MAX, filename);
-	strcat_s(*fullName, FILENAME_MAX, num);
-	strcat_s(*fullName, FILENAME_MAX, extension);
 }
 
 
 enum Toy getToyByName(const char* name)
 {
-	if (!strcmp(name, "ARANHA"))
+	if (!strcmp(name, TOY_ARANHA))
 		return ARANHA;
-	if (!strcmp(name, "SAPO"))
+	if (!strcmp(name, TOY_SAPO))
 		return SAPO;
-	if (!strcmp(name, "DENTADURA"))
+	if (!strcmp(name, TOY_DENTADURA))
 		return DENTADURA;
-	if (!strcmp(name, "FANTASMINHA"))
+	if (!strcmp(name, TOY_FANTASIMNHA))
 		return FANTASMINHA;
-	if (!strcmp(name, "BRUXINHA"))
+	if (!strcmp(name, TOY_BRUXINHA))
 		return BRUXINHA;
 
 	return (enum Toy)0;

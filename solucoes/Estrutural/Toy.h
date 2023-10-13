@@ -1,5 +1,11 @@
 #pragma once
 
+#define TOY_ARANHA "ARANHA"
+#define TOY_SAPO "SAPO"
+#define TOY_DENTADURA "DENTADURA"
+#define TOY_FANTASIMNHA "FANTASMINHA"
+#define TOY_BRUXINHA "BRUXINHA"
+
 
 enum Toy
 {

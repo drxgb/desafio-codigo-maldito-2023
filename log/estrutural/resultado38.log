@@ -1,0 +1,25 @@
+Samuel: [ SAPO, ]
+Franklin: [ ]
+Hellen: [ FANTASMINHA, ]
+JC: [ ]
+Daniel: [ DENTADURA, ]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Expectativa:
+------------
+
+Samuel:
+	[SAPO]
+Franklin:
+	[]
+Hellen:
+	[FANTASMINHA]
+JC:
+	[]
+Daniel:
+	[DENTADURA]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Resultado:		✔️ Passou
+Tempo decorrido:	0.044s
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

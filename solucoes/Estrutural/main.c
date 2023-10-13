@@ -5,13 +5,10 @@
 
 
 // Macros
-#define BOX_COUNT 50
 #define BOX_CAPACITY 100
-#define BAG_CAPACITY 100
-#define TRUE 1
-#define FALSE 0
-#define ZERO_BAG(bag) free(bag); bag = malloc(BAG_CAPACITY * sizeof(bag)); for (unsigned int i = 0; i < BAG_CAPACITY; ++i) { bag[i] = 0; }
-#define CHECK_FAVORITE_TOY(kid, toy) if (isFavoriteToy(kid, toy)) { takeToyToBag(kid.bag, toy); }
+#define BAG_CAPACITY BOX_CAPACITY
+#define ZERO_TOYS(list, capacity) free(list); list = malloc(capacity * sizeof(enum Toy*)); for (unsigned int i = 0; i < capacity; ++i) { list[i] = 0; }
+#define CHECK_FAVORITE_TOY(kid, toy) (isFavoriteToy(kid, toy)) { takeToyToBag(kid.bag, toy); }
 
 
 // Tipos
@@ -35,38 +32,26 @@ void printBag(const enum Toy* bag);
 void printKidsBag(const struct Kid kid);
 
 void test(enum Toy* box);
-void assertKidsBag(const struct Kid kid);
 
 
 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 int main(int argc, char** argv)
 {
-	enum Toy** boxes;
-	enum Toy* box;
+	enum Toy* box = 0;
 	const char* inputPath = argv[1];
 
-	boxes = (enum Toy**)malloc(sizeof(enum Toy) * BOX_CAPACITY * BOX_COUNT);
-	for (size_t i = 0; i < BOX_COUNT; ++i)
+	if (!inputPath)
 	{
-		boxes[i] = malloc(sizeof(enum Toy) * BOX_CAPACITY);
-		for (size_t j = 0; j < BOX_CAPACITY; ++j)
-			boxes[i][j] = 0;
+		puts("ERRO: Não foi possível encontrar o arquivo da caixa de brinquedos");
+		return 1;
 	}
 
-	loadBoxes(boxes, BOX_COUNT, inputPath, "caixa", ".txt");
+	ZERO_TOYS(box, BOX_CAPACITY);
+	loadBox(box, BOX_CAPACITY, inputPath);
+	test(box);
+	free(box);
 
-	for (unsigned int i = 0; i < BOX_COUNT; ++i)
-	{
-		box = boxes[i];
-		if (box)
-		{
-			printf("Test #%d:\n=========\n", i + 1);
-			test(box);
-			puts("========================\n");
-		}
-	}
-	free(boxes);
 	return 0;
 }
 
@@ -74,11 +59,11 @@ int main(int argc, char** argv)
 // Subrotinas
 void initialize()
 {
-	ZERO_BAG(k1.bag)
-	ZERO_BAG(k2.bag)
-	ZERO_BAG(k3.bag)
-	ZERO_BAG(k4.bag)
-	ZERO_BAG(k5.bag)
+	ZERO_TOYS(k1.bag, BAG_CAPACITY)
+	ZERO_TOYS(k2.bag, BAG_CAPACITY)
+	ZERO_TOYS(k3.bag, BAG_CAPACITY)
+	ZERO_TOYS(k4.bag, BAG_CAPACITY)
+	ZERO_TOYS(k5.bag, BAG_CAPACITY)
 }
 
 
@@ -90,11 +75,11 @@ void distributeToys(enum Toy* toys)
 	{
 		toy = *toys;
 
-		CHECK_FAVORITE_TOY(k1, toy)
-		else CHECK_FAVORITE_TOY(k2, toy)
-		else CHECK_FAVORITE_TOY(k3, toy)
-		else CHECK_FAVORITE_TOY(k4, toy)
-		else CHECK_FAVORITE_TOY(k5, toy)
+		if CHECK_FAVORITE_TOY(k1, toy)
+		else if CHECK_FAVORITE_TOY(k2, toy)
+		else if CHECK_FAVORITE_TOY(k3, toy)
+		else if CHECK_FAVORITE_TOY(k4, toy)
+		else if CHECK_FAVORITE_TOY(k5, toy)
 
 		*toys++ = 0;
 	}
@@ -123,22 +108,22 @@ void printBag(const enum Toy* bag)
 		switch (*bag)
 		{
 		case ARANHA:
-			printf("ARANHA");
+			printf(TOY_ARANHA);
 			break;
 		case SAPO:
-			printf("SAPO");
+			printf(TOY_SAPO);
 			break;
 		case DENTADURA:
-			printf("DENTADURA");
+			printf(TOY_DENTADURA);
 			break;
 		case FANTASMINHA:
-			printf("FANTASMINHA");
+			printf(TOY_FANTASIMNHA);
 			break;
 		case BRUXINHA:
-			printf("BRUXINHA");
+			printf(TOY_BRUXINHA);
 			break;
 		}
-		printf(" ");
+		printf(", ");
 		++bag;
 	}
 	puts("]");
@@ -155,36 +140,10 @@ void printKidsBag(const struct Kid kid)
 void test(enum Toy* box)
 {
 	initialize();
-	printBag(box);
 	distributeToys(box);
-	assertKidsBag(k1);
-	assertKidsBag(k2);
-	assertKidsBag(k3);
-	assertKidsBag(k4);
-	assertKidsBag(k5);
-}
-
-
-void assertKidsBag(const struct Kid kid)
-{
-	unsigned int result;
-	enum Toy* bag = kid.bag;
-
-	result = 1U;
-	while (*bag)
-	{
-		if (!isFavoriteToy(kid, *bag))
-		{
-			result = 0U;
-			break;
-		}
-		++bag;
-	}
-
-	printKidsBag(kid);
-
-	if (result)
-		puts("\tPassed!");
-	else
-		puts("\tFailed!");
+	printKidsBag(k1);
+	printKidsBag(k2);
+	printKidsBag(k3);
+	printKidsBag(k4);
+	printKidsBag(k5);
 }
