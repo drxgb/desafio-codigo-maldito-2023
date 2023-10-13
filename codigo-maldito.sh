@@ -35,6 +35,7 @@ write_solution_title "1 - Estruturada"
 
 # Solução orientada a objetos
 write_solution_title "2 - Orientada a Objetos"
+./scripts/poo.sh
 
 # Solução estrutural
 write_solution_title "3 - Funcional"

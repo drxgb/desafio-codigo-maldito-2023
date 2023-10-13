@@ -1,0 +1,25 @@
+Samuel: [SAPO, SAPO]
+Franklin: []
+Hellen: [FANTASMINHA]
+JC: []
+Daniel: []
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Expectativa:
+------------
+
+Samuel:
+	[SAPO, SAPO]
+Franklin:
+	[]
+Hellen:
+	[FANTASMINHA]
+JC:
+	[]
+Daniel:
+	[]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Resultado:		✔️ Passou
+Tempo decorrido:	0.042s
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
