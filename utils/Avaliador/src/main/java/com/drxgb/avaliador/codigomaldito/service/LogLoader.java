@@ -2,6 +2,7 @@ package com.drxgb.avaliador.codigomaldito.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -53,6 +54,7 @@ public final class LogLoader implements Loader<Scanner, List<Bag<Toy>>>
 		Matcher matcher;
 		String line;
 		String childName;
+		String listStr;
 		Toy toy;
 		List<String> items;
 		List<Toy> toys;
@@ -66,7 +68,10 @@ public final class LogLoader implements Loader<Scanner, List<Bag<Toy>>>
 			if (matcher.find())
 			{
 				childName = matcher.group(1);
-				items = Arrays.asList(matcher.group(2).split(",( *)"));
+				listStr = matcher.group(2);
+				items = (listStr != null)
+						? Arrays.asList(listStr.split(",( *)"))
+						: Collections.emptyList();
 				toy = null;
 
 				for (String item : items)

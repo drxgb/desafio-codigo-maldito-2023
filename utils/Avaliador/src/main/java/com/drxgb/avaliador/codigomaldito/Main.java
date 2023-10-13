@@ -82,17 +82,18 @@ public class Main
 			// Resultado encontrado
 			logLoader.setToyNames(ToyNameAssociator.mapToyNames(nameScanner));
 			actualResult = logLoader.load(logScanner);
-			printer.print(actualResult);
 			
 			// Escreve o resultado esperado
+			output.println();
 			printLine();
 			output.println("Expectativa:");
 			output.println("------------\n");
 			printer.print(expectedResult);
+			output.println();
 			printLine();
 			
 			// Resultado final dos testes
-			output.print("\nResultado:\t\t");
+			output.print("Resultado:\t\t");
 			validator = new TestValidator(actualResult, expectedResult);
 			if (validator.pass())
 				output.println("✔️ Passou");
@@ -101,7 +102,7 @@ public class Main
 
 			output.print("Tempo decorrido:\t");
 			output.print(String.format("%.3f", timer.getElapsedSeconds()));
-			output.println("s\n");
+			output.println("s");
 			printLine();
 		}
 	}
