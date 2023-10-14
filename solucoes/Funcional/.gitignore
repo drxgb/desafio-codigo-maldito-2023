@@ -1,3 +1,5 @@
+.vscode/
 *.hi
 *.o
 main
+test.sh

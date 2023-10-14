@@ -1,0 +1,25 @@
+Samuel: [SAPO,SAPO]
+Franklin: []
+Hellen: [FANTASMINHA,FANTASMINHA,FANTASMINHA]
+JC: [BRUXINHA,BRUXINHA]
+Daniel: [DENTADURA,DENTADURA,DENTADURA,DENTADURA]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Expectativa:
+------------
+
+Samuel:
+	[SAPO, SAPO]
+Franklin:
+	[]
+Hellen:
+	[FANTASMINHA, FANTASMINHA, FANTASMINHA]
+JC:
+	[BRUXINHA, BRUXINHA]
+Daniel:
+	[DENTADURA, DENTADURA, DENTADURA, DENTADURA]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Resultado:		✔️ Passou
+Tempo decorrido:	0.064s
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

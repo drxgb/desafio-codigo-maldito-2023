@@ -39,3 +39,4 @@ write_solution_title "2 - Orientada a Objetos"
 
 # Solução estrutural
 write_solution_title "3 - Funcional"
+./scripts/funcional.sh
