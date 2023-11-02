@@ -1,0 +1,271 @@
+<mxfile host="Electron" modified="2023-11-01T23:30:45.820Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="lBJztAsVO_5xVESczQOr" version="22.0.3" type="device" pages="2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Lógica">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Retira o brinquedo do baú" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="270" y="87" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="jBq9fLbuSrFk1VcDzS2F-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-7" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-6">
+          <mxGeometry x="0.04" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="jBq9fLbuSrFk1VcDzS2F-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-14" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-13">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint x="-14" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="Samuel gosta do brinquedo?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="305" y="197" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-0" target="WIyWlLk6GJQsqaUBKTNV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-0" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="92" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-5" target="jBq9fLbuSrFk1VcDzS2F-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="947" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="237" />
+              <mxPoint x="770" y="957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-5" value="Samuel guarda o brinquedo em sua mochila" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="217" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-11" target="jBq9fLbuSrFk1VcDzS2F-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-10" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-9">
+          <mxGeometry x="0.04" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-11" target="jBq9fLbuSrFk1VcDzS2F-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-21" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-20">
+          <mxGeometry x="-0.44" y="-2" relative="1" as="geometry">
+            <mxPoint x="-15" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-11" value="Franklin gosta do brinquedo?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="305" y="318" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-12" target="jBq9fLbuSrFk1VcDzS2F-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="957" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="750" y="358" />
+              <mxPoint x="750" y="957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-12" value="Franklin guarda o brinquedo em sua mochila" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="338" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-18" target="jBq9fLbuSrFk1VcDzS2F-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-17" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-16">
+          <mxGeometry x="0.04" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-18" target="jBq9fLbuSrFk1VcDzS2F-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-27" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-26">
+          <mxGeometry x="-0.7073" y="-2" relative="1" as="geometry">
+            <mxPoint x="-14" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-18" value="Hellen gosta do brinquedo?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="305" y="437" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-19" target="jBq9fLbuSrFk1VcDzS2F-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="477" />
+              <mxPoint x="730" y="957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-19" value="Hellen guarda o brinquedo em sua mochila" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="457" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-24" target="jBq9fLbuSrFk1VcDzS2F-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-23" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-22">
+          <mxGeometry x="0.04" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-24" target="jBq9fLbuSrFk1VcDzS2F-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-33" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-32">
+          <mxGeometry x="-0.7561" relative="1" as="geometry">
+            <mxPoint x="-17" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-24" value="JC gosta do brinquedo?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="305" y="556" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-25" target="jBq9fLbuSrFk1VcDzS2F-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="957" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="596" />
+              <mxPoint x="710" y="957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-25" value="JC guarda o brinquedo em sua mochila" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="576" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-30" target="jBq9fLbuSrFk1VcDzS2F-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-29" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-28">
+          <mxGeometry x="0.04" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-30" target="jBq9fLbuSrFk1VcDzS2F-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-36" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-35">
+          <mxGeometry x="0.08" y="-2" relative="1" as="geometry">
+            <mxPoint x="-16" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-30" value="Daniel gosta do brinquedo?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="305" y="677" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-31" target="jBq9fLbuSrFk1VcDzS2F-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-31" value="Daniel guarda o brinquedo em sua mochila" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="697" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-34" target="jBq9fLbuSrFk1VcDzS2F-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-34" value="Brinquedo é descartado" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="290" y="807" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-37" target="WIyWlLk6GJQsqaUBKTNV-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="957" />
+              <mxPoint x="200" y="107" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-40" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-39">
+          <mxGeometry x="-0.9298" relative="1" as="geometry">
+            <mxPoint x="1" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-37" target="jBq9fLbuSrFk1VcDzS2F-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-48" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jBq9fLbuSrFk1VcDzS2F-47">
+          <mxGeometry x="-0.52" y="-4" relative="1" as="geometry">
+            <mxPoint x="-13" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-37" value="Há mais brinquedos&lt;br&gt;no baú?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="305" y="917" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBq9fLbuSrFk1VcDzS2F-46" target="jBq9fLbuSrFk1VcDzS2F-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-46" value="Lista de brinquedos adquiridos&lt;br&gt;pelas crianças" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="277.5" y="1041" width="195" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jBq9fLbuSrFk1VcDzS2F-49" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="1066" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="bmwEutVu0od6tij7hkpT" name="Associação">
+    <mxGraphModel dx="1646" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="31" y="641" width="750" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-1" value="Samuel" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-2" value="Franklin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-3" value="Hellen" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-4" value="JC" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="420" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-5" value="Daniel" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-7" value="Aranha&lt;br&gt;de Plástico" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-8" value="Sapo&lt;br&gt;de Borracha" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-9" value="Dentadura" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-10" value="Fantasminha&lt;br&gt;que brilha no&lt;br&gt;escuro" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-11" value="Bruxinha" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-13" value="Afirmações" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=36;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="131" y="661" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-14" value="&lt;div style=&quot;font-size: 24px;&quot;&gt;1. Hellen gosta de Fantasminhas que brilham no escuro.​&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;2. Daniel nunca vai receber Bruxinhas.​&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;3. Franklin não gosta de Bruxinhas.​&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;4. As outras crianças nunca receberão Sapos de borracha.​&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;5. As Dentaduras sempre serão passadas para todas as crianças.​&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelPosition=center;verticalLabelPosition=middle;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="51" y="711" width="720" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="6z7-8WFQxhyz_nbiED3f-3" target="6z7-8WFQxhyz_nbiED3f-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="6z7-8WFQxhyz_nbiED3f-1" target="6z7-8WFQxhyz_nbiED3f-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="6z7-8WFQxhyz_nbiED3f-4" target="6z7-8WFQxhyz_nbiED3f-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="6z7-8WFQxhyz_nbiED3f-5" target="6z7-8WFQxhyz_nbiED3f-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6z7-8WFQxhyz_nbiED3f-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="6z7-8WFQxhyz_nbiED3f-2" target="6z7-8WFQxhyz_nbiED3f-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
